@@ -46,7 +46,7 @@ namespace iPortfolio.Pages.myadmin
 
         private void DeleteFile(string OldImageName)
         {
-            var FolderPath = Path.Combine(env.WebRootPath, "images");
+            var FolderPath = Path.Combine(env.WebRootPath, "image");
             var ImagePath = Path.Combine(FolderPath, OldImageName);
 
             FileInfo fileInfo = new FileInfo(ImagePath);
