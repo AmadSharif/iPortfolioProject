@@ -25,7 +25,7 @@ namespace iPortfolio.Pages.myadmin
             if (ModelState.IsValid)
             {
                 string ImageName = profile.Photo.FileName.ToString();
-                var FolderPath = Path.Combine(env.WebRootPath, "images");
+                var FolderPath = Path.Combine(env.WebRootPath, "image");
                 var ImagePath = Path.Combine(FolderPath, ImageName);
                 FileStream fs = new FileStream(ImagePath, FileMode.Create);
                 profile.Photo.CopyTo(fs);
